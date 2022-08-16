@@ -33,7 +33,7 @@ const TvShowsSearchbar = () => {
           minLength={2}
           debounceTimeout={300}
           className= 'drop-shadow-md bg-white dark:bg-[#323F4B] px-4 pr-7 py-2 rounded-lg w-full h-full dark:text-[#E4E7EB] outline-none focus:ring focus:ring-[#E4E7EB]'
-          placeholder='Search movie...'
+          placeholder='Search Tv-Show...'
           onChange={e => setSearchData(e.target.value)} />
         <div className='text-gray-500 dark:text-[#E4E7EB] mx-2 flex items-center justify-center absolute top-0 right-0 bottom-0 '>{searchData === '' ? <BiSearchAlt2 size={24}/> :  <IoMdClose size={27} className='cursor-pointer p-1 rounded-full drop-shadow-md bg-[#F4F4F4] dark:bg-[#1F2933]' onClick={() => setSearchData(prevData => prevData = '')}/>} </div> 
         </div>
