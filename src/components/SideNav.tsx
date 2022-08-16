@@ -30,7 +30,7 @@ const SideNav = ({ isOpen, setIsOpen }: SideNavType) => {
         ${isOpen ? `translate-x-0 drop-shadow-md` : `-translate-x-full`} md:drop-shadow-none md:translate-x-0 transition-transform `}>
         
             <div className='text-[#343333] dark:text-[#F5F7FA] flex items-center justify-between px-4 md:px-5 h-[68px]'>
-                <Link to='/' className='text-2xl lg:text-3xl'>Moview App</Link>
+                <Link to='/' className='text-2xl lg:text-3xl'>Moview</Link>
                 <button className='md:hidden active:bg-black/5 dark:active:bg-white/10 p-1 rounded-full' onClick={() => setIsOpen(false)}><IoMdClose size={28}/></button>
             </div>
             <div className='md:hidden my-2 mb-5 px-3 md:px-5 w-full'>
